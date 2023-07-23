@@ -34,6 +34,6 @@ Also, I used following technical stacks and libraries.
 
 As I mentioned above, I started from react version 16 project and found drag & drop component.
 I tried to install framer-motion package but it isn't allowed in react version 16 and project crashed.
-So I migerate the project from version 16 to 18.
+So I migrate the project from version 16 to 18.
 
 I have enough experience in Tailwind css but I selected custom css to show my css skills.
