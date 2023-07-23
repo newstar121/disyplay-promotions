@@ -13,15 +13,20 @@ node v18.16.1
 
 Before start project, you should install npm pacakge using following command.<br />
 
-cd display-promotions<br />
+### cd display-promotions<br />
 
-npm install
+### npm install
 
 To start projet. use this.<br />
 
-npm run start
+### npm run start
 
 ## Technologies and library choices
+
+In this project, I aim to build well-structured project.
+You will noticed about that once you look at my code.
+
+Also, I used following technical stacks and libraries.
 
 - React, Hook, Context, Provider, Restful API
 - Custom css, React-bootstrap
@@ -32,4 +37,3 @@ I tried to install framer-motion package but it isn't allowed in react version 1
 So I migerate the project from version 16 to 18.
 
 I have enough experience in Tailwind css but I selected custom css to show my css skills.
-
