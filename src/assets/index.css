@@ -44,22 +44,24 @@ li {
 
 ul {
   position: relative;
-  width: 300px;
+  width: 80%;
+  height: fit-content;
+  /* padding: 20px; */
 }
 
 li {
   border-radius: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  /* width: 100%; */
   padding: 15px 20px;
   position: relative;
   background: white;
   border-radius: 5px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .background {
@@ -69,5 +71,10 @@ li {
   bottom: 0;
   width: 300px;
   background: #fff;
+}
+
+#root {
+  width: 100% !important;
+  height: 100% !important;
 }
 

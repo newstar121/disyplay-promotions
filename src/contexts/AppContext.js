@@ -26,15 +26,33 @@ function reducer(state, { type, payload }) {
 export const GlobalContext = createContext();
 export const useGlobalData = () => useContext(GlobalContext);
 
-export async function getPromotions() {
+/**
+ * Get promotions from endpoints
+ * @param {number} page
+ * @param {number} pageSize
+ * @param {number} limit
+ * 
+ * Result param
+ * @param {string} id
+ * @param {string} name
+ * @param {string} description
+ * @param {string} heroImageUrl
+ * @param {bool}   onlyNewCustomers
+ * @param {string} termsAndConditionsButtonText
+ * @param {string} joinNowButtonText
+ * @param {number} sequence
+ * 
+ * @returns {Array}
+ */
+export const getPromotions = async () => {
 
     try {
 
         let response = await axios.get(
-            API_URL + '484016a8-3cdb-44ad-97db-3e5d20d84298', 
+            API_URL + '484016a8-3cdb-44ad-97db-3e5d20d84298',
             {
-                params:{
-                    
+                params: {
+
                 }
             });
 
@@ -64,15 +82,15 @@ const GlobalProvider = ({ children }) => {
 
     }, [])
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        getPromotions().then((promotions) => {
+    //     getPromotions().then((promotions) => {
 
-            updatePromotions(promotions)
+    //         updatePromotions(promotions)
 
-        });
+    //     });
 
-    }, [])
+    // }, [])
 
     return (
         <GlobalContext.Provider
@@ -81,11 +99,15 @@ const GlobalProvider = ({ children }) => {
 
                 () => [
                     state,
-                    updatePromotions
+                    {
+                        updatePromotions
+                    }
                 ],
                 [
                     state,
-                    updatePromotions,
+                    {
+                        updatePromotions
+                    }
                 ]
             )}
 
