@@ -91,16 +91,87 @@
   width: 100%;
 }
 
+.w-20 {
+  width: 20vw;
+}
+
+.w-30 {
+  width: 30vw;
+}
+
+.w-40 {
+  width: 40vw;
+}
+
+.width-100 {
+  width: 100px;
+}
+
+.width-200 {
+  width: 200px;
+}
+
+.width-300 {
+  width: 300px;
+}
+
+
+
 .p-20 {
   padding: 20px;
+}
+
+.pt-10 {
+  padding-top: 10px;
 }
 
 .pt-20 {
   padding-top: 20px;
 }
 
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+
 .pb-20 {
   padding-bottom: 20px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.ml-2 {
+  margin-left: 2px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .mb-20 {
@@ -123,7 +194,7 @@
   height: 80px;
 }
 
-.h-100 {
+.height-100 {
   height: 100px;
 }
 
@@ -153,4 +224,152 @@
 
 .text-yellow {
   color: yellow;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.glow-on-hover-right {
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #664eae;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 0px 10px 10px 0px;
+  border: white 2px solid;
+}
+
+.glow-on-hover-right:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.glow-on-hover-right:active {
+  color: #000
+}
+
+.glow-on-hover-right:active:after {
+  background: transparent;
+}
+
+.glow-on-hover-right:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover-right:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #664eae;
+  left: 0;
+  top: 0;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.glow-on-hover-left {
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #664eae;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px 0px 0px 10px;
+  border: white 2px solid;
+}
+
+.glow-on-hover-left:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.glow-on-hover-left:active {
+  color: #000
+}
+
+.glow-on-hover-left:active:after {
+  background: transparent;
+}
+
+.glow-on-hover-left:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover-left:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #664eae;
+  left: 0;
+  top: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.image-size {
+  width: 40vw;
+  height: 20vw;
+}
+
+.customer-card {
+  border-radius: 0px;
+  background-color: white;
+}
+
+.category-button {
+  color: salmon;
 }
