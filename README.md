@@ -4,7 +4,7 @@ At first, I started this project from react version 16 project.<br />
 During the development, I encounted npm package conflict issue due to low react version.<br />
 So I updated react version from 16 to 18.
 
-I had 72 hours to finish this test project but because of several problems in weekend, I only worked a few hours on this project.<br />
+I had 72 hours to finish this test project but because of several problems on weekend, I only worked a few hours on this project.<br />
 I know there are so many things to update.
 
 ## Environment
